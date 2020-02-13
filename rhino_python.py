@@ -79,10 +79,10 @@ while active:
 
 		# switch to rhino context, and migrate the geom
 		sc.doc = Rhino.RhinoDoc.ActiveDoc
-		ref_rhino = sc.doc.Objects.Add(geometry, attributes)
+		todo = sc.doc.Objects.Add(geometry, attributes)
 
 		# change the layer
-		rs.ObjectLayer(rhino_ref, layer)
+		rs.ObjectLayer(todo, layer)
 
 	else:
 		break
