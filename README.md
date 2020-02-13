@@ -1,1 +1,3 @@
-# rhinoceros-maya-py
+# rhinoceros-maya
+
+python scripts implemented in rhinoceros and maya.
