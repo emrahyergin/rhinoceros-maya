@@ -5,13 +5,7 @@ import maya.cmds as cmds
 
 random.seed(1234)
 
-#cubeList = cmds.ls('myCube*')
-#if len(cubeList) > 0:
-#    cmds.delete(cubeList)
-
 result = cmds.polyCube(w=1, h=1, d=1, name='myCube#')
-
-#print 'result: ' + str( result )
 
 transformName = result[0]
 instanceGroupName = cmds.group(empty=True, name=transformName + '_instance_grp#')
